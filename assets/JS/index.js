@@ -17,7 +17,7 @@ let currentLocationName = "";
 // Call API
 async function getWeather(location) {
   let response = await fetch(
-    ` http://api.weatherapi.com/v1/forecast.json?key=db37b3be0b6a48e6b17130405252904&q=${location}&days=3`
+    ` https://api.weatherapi.com/v1/forecast.json?key=db37b3be0b6a48e6b17130405252904&q=${location}&days=3`
   );
   let allData = await response.json();
   city.innerHTML = allData.location.name;
